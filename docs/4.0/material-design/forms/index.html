@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/>
+<meta
+  http-equiv="refresh"
+  content="time; URL=https://bootstrap-material-design.github.io/bootstrap-material-design/docs/4.0/material-design/forms.md"
+/>
+
+  </head>
+  <body class="bd-docs" data-spy="scroll" data-target=".bd-sidenav-active">
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+      <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+      </div>
+    </a>
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar"></div>
+
+        
+
+        <main
+          class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content"
+          role="main"
+        >
+          <h1 class="bd-title" id="content">Forms</h1>
+          <p class="bd-lead"></p>
+          <p>Bootstrap provides several form control styles, layout options, and custom components for creating a wide variety of forms.</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#classes" id="markdown-toc-classes">Classes</a></li>
+  <li><a href="#form-groups" id="markdown-toc-form-groups">Form groups</a></li>
+  <li><a href="#inline-forms" id="markdown-toc-inline-forms">Inline forms</a>    <ul>
+      <li><a href="#visible-labels" id="markdown-toc-visible-labels">Visible labels</a></li>
+    </ul>
+  </li>
+  <li><a href="#help-blocks" id="markdown-toc-help-blocks">Help blocks</a>    <ul>
+      <li><a href="#multiple" id="markdown-toc-multiple">Multiple</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Form controls flavored by Material Design for Bootstrap customizations such as <code class="highlighter-rouge">bmd-label-floating</code>.</p>
+
+<div class="bd-example" data-example-id="">
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1" class="bmd-label-floating">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" />
+    <span class="bmd-help">We'll never share your email with anyone else.</span>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1" class="bmd-label-floating">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" />
+  </div>
+  <div class="form-group">
+    <label for="exampleSelect1" class="bmd-label-floating">Example select</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleSelect2" class="bmd-label-floating">Example multiple select</label>
+    <select multiple="" class="form-control" id="exampleSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleTextarea" class="bmd-label-floating">Example textarea</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile" class="bmd-label-floating">File input</label>
+    <input type="file" class="form-control-file" id="exampleInputFile" />
+    <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" />
+      Option one is this and that&mdash;be sure to include why it's great
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" />
+      Option two can be something else and selecting it will deselect option one
+    </label>
+  </div>
+  <div class="radio disabled">
+    <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="" />
+      Option three is disabled
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" /> Check me out
+    </label>
+  </div>
+  <button class="btn btn-default">Cancel</button>
+  <button type="submit" class="btn btn-primary btn-raised">Submit</button>
+</form>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail1"</span> <span class="na">class=</span><span class="s">"bmd-label-floating"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"bmd-help"</span><span class="nt">&gt;</span>We'll never share your email with anyone else.<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputPassword1"</span> <span class="na">class=</span><span class="s">"bmd-label-floating"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputPassword1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleSelect1"</span> <span class="na">class=</span><span class="s">"bmd-label-floating"</span><span class="nt">&gt;</span>Example select<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleSelect1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleSelect2"</span> <span class="na">class=</span><span class="s">"bmd-label-floating"</span><span class="nt">&gt;</span>Example multiple select<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">multiple</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleSelect2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleTextarea"</span> <span class="na">class=</span><span class="s">"bmd-label-floating"</span><span class="nt">&gt;</span>Example textarea<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleTextarea"</span> <span class="na">rows=</span><span class="s">"3"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputFile"</span> <span class="na">class=</span><span class="s">"bmd-label-floating"</span><span class="nt">&gt;</span>File input<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">class=</span><span class="s">"form-control-file"</span> <span class="na">id=</span><span class="s">"exampleInputFile"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.<span class="nt">&lt;/small&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"optionsRadios"</span> <span class="na">id=</span><span class="s">"optionsRadios1"</span> <span class="na">value=</span><span class="s">"option1"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+      Option one is this and that<span class="ni">&amp;mdash;</span>be sure to include why it's great
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"optionsRadios"</span> <span class="na">id=</span><span class="s">"optionsRadios2"</span> <span class="na">value=</span><span class="s">"option2"</span><span class="nt">&gt;</span>
+      Option two can be something else and selecting it will deselect option one
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio disabled"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"optionsRadios"</span> <span class="na">id=</span><span class="s">"optionsRadios3"</span> <span class="na">value=</span><span class="s">"option3"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+      Option three is disabled
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Check me out
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-raised"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+<h2 id="classes">Classes</h2>
+
+<p>Below is a complete list of options supported by Material Design for Bootstrap and the classes that customize them. Additional documentation is available for each group.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Classes</th>
+      <th>Used for</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>.bmd-form-group</code>
+      </td>
+      <td>
+        Any group of form controls (e.g. combination of label/input).
+      </td>
+      <td>
+        <p>This is automatically added by javascript, but if your code is templated, adding <code class="highlighter-rouge">.bmd-form-group</code> 
+        to your form groups or otherwise your groups of controls can reduce rendering churn since the javascript will not
+        add the class after the initial page rendering.  This can also demarcate complex label/input combinations inside the 
+        same <code class="highlighter-rouge">.form-group</code>.</p>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>.bmd-form-group-sm</code>
+      </td>
+      <td>
+        <p>Added to the <code class="highlighter-rouge">.bmd-form-group</code>, this will render the combination label/input/help in the smaller variation.</p>
+
+      </td>
+      <td>
+        
+      </td>
+    </tr>    
+    <tr>
+      <td>
+        <code>.bmd-form-group-lg</code>
+      </td>
+      <td>
+        <p>Added to the <code class="highlighter-rouge">.bmd-form-group</code>, this will render the combination label/input/help in the larger variation.</p>
+
+      </td>
+      <td>
+        
+      </td>
+    </tr>     
+    <tr>
+      <td>
+        <code>.bmd-help</code>
+      </td>
+      <td>
+        Any help text
+      </td>
+      <td>
+        <p>Mark any help text next to an input with <code class="highlighter-rouge">.bmd-help</code> to gain behaviors such as showing upon focus.</p>
+
+      </td>
+    </tr>    
+  </tbody>
+</table>
+
+<h2 id="form-groups">Form groups</h2>
+
+<p>The <code class="highlighter-rouge">.bmd-form-group</code> class is usually added to the <code class="highlighter-rouge">.form-group</code> element. Whereas the <code class="highlighter-rouge">.form-group</code> adds structure to forms by providing <code class="highlighter-rouge">margin-bottom</code> around a label and control pairing,
+ the only purpose of the  <code class="highlighter-rouge">.bmd-form-group</code> is to demarcate Material Design behaviors for a combination of label/input.  Focus/hover styling for the label/input is determined based on the <code class="highlighter-rouge">.bmd-form-group</code>.</p>
+
+<p>The <code class="highlighter-rouge">.bmd-form-group</code> is added automatically by javascript through basic discovery of the outer demarcation of the component defined by the Bootstrap standard 
+markup.  If your code is templated, you may want to add <code class="highlighter-rouge">.bmd-form-group</code> to the markup directly to prevent any rendering churn from the javascript determining 
+and adding the class to the markup.  In custom situations, the javascript may not be able to properly resolve the location for the <code class="highlighter-rouge">.bmd-form-group</code>, so in rare or complex cases
+you may need to wrap your markup in an <code class="highlighter-rouge">.bmd-form-group</code> to get appropriate focus/hover behavior.</p>
+
+<div class="bd-example" data-example-id="">
+<form>
+  <div class="form-group"> <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+    <label for="formGroupExampleInput" class="bmd-label-floating">Example label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" />
+  </div>
+  <div class="form-group bmd-form-group"> <!-- manually specified --> 
+    <label for="formGroupExampleInput2" class="bmd-label-floating">Another label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" />
+  </div>
+</form>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) --&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"formGroupExampleInput"</span> <span class="na">class=</span><span class="s">"bmd-label-floating"</span><span class="nt">&gt;</span>Example label<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"formGroupExampleInput"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group bmd-form-group"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- manually specified --&gt;</span> 
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"formGroupExampleInput2"</span> <span class="na">class=</span><span class="s">"bmd-label-floating"</span><span class="nt">&gt;</span>Another label<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"formGroupExampleInput2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+<h2 id="inline-forms">Inline forms</h2>
+
+<p>Use the <code class="highlighter-rouge">.form-inline</code> class to to display a series of labels, form controls, and buttons on a single horizontal row. Form controls within inline forms behave differently:</p>
+
+<ul>
+  <li>Controls are <code class="highlighter-rouge">display: inline-block</code> to provide alignment control via <code class="highlighter-rouge">vertical-align</code> and <code class="highlighter-rouge">margin</code>.</li>
+  <li>Controls receive <code class="highlighter-rouge">width: auto</code> to override the Bootstrap default <code class="highlighter-rouge">width: 100%</code>.</li>
+  <li>Controls <strong>only appear inline in viewports that are at least 768px wide</strong> to account for narrow viewports on mobile devices.</li>
+</ul>
+
+<p>Because of this, you may need to manually address the width and alignment of individual form controls. Lastly, as shown below, you should always include a <code class="highlighter-rouge">&lt;label&gt;</code> with each form control.</p>
+
+<h3 id="visible-labels">Visible labels</h3>
+
+<div class="bd-example" data-example-id="">
+<form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputName2" class="bmd-label-floating">Name</label>
+    <input type="text" class="form-control" id="exampleInputName2" />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2" class="bmd-label-floating">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" />
+  </div>
+  <span class="form-group bmd-form-group"> <!-- needed to match padding for floating labels -->
+    <button type="submit" class="btn btn-primary">Send invitation</button>
+  </span>
+</form>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputName2"</span> <span class="na">class=</span><span class="s">"bmd-label-floating"</span><span class="nt">&gt;</span>Name<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputName2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail2"</span> <span class="na">class=</span><span class="s">"bmd-label-floating"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-group bmd-form-group"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- needed to match padding for floating labels --&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Send invitation<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+<h2 id="help-blocks">Help blocks</h2>
+
+<p><code class="highlighter-rouge">bmd-help</code> can be used for form tips (known as <code class="highlighter-rouge">help-block</code> in v3 which has been removed in v4).  These elements are absolutely positioned but hidden, they occupy the space when hidden to prevent form bouncing.</p>
+
+<h3 id="multiple">Multiple</h3>
+
+<p>Multiple help blocks will cause the form to bounce because subsequent blocks are relatively positioned.  The space used when hidden is that of a single help comment only.</p>
+
+<div class="bd-example" data-example-id="">
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1" class="bmd-label-floating">Email address (two help blocks)</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" />
+    <span class="bmd-help">We'll never share your email with anyone else.</span>
+    <span class="bmd-help">And this is probably from a second plugin showing in a non-optimal way</span>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1" class="bmd-label-floating">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" />
+  </div>  
+</form>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail1"</span> <span class="na">class=</span><span class="s">"bmd-label-floating"</span><span class="nt">&gt;</span>Email address (two help blocks)<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"bmd-help"</span><span class="nt">&gt;</span>We'll never share your email with anyone else.<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"bmd-help"</span><span class="nt">&gt;</span>And this is probably from a second plugin showing in a non-optimal way<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputPassword1"</span> <span class="na">class=</span><span class="s">"bmd-label-floating"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputPassword1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>  
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/>
+<meta
+  http-equiv="refresh"
+  content="time; URL=https://bootstrap-material-design.github.io/bootstrap-material-design/docs/4.0/material-design/list-groups.md"
+/>
+
+  </head>
+  <body class="bd-docs" data-spy="scroll" data-target=".bd-sidenav-active">
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+      <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+      </div>
+    </a>
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar"></div>
+
+        
+
+        <main
+          class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content"
+          role="main"
+        >
+          <h1 class="bd-title" id="content">List groups</h1>
+          <p class="bd-lead"></p>
+          <p>Material design list groups are specialized versions of their bootstrap counterparts, opting for the flexbox layout to achieve
+the varieties specified. (<a href="https://www.google.com/design/spec/components/lists.html#lists-specs">Specification</a>)</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#single-line" id="markdown-toc-single-line">Single line</a>    <ul>
+      <li><a href="#text" id="markdown-toc-text">Text</a></li>
+      <li><a href="#dense" id="markdown-toc-dense">Dense</a></li>
+      <li><a href="#icons-and-labels" id="markdown-toc-icons-and-labels">Icons and labels</a></li>
+    </ul>
+  </li>
+  <li><a href="#double-line" id="markdown-toc-double-line">Double line</a>    <ul>
+      <li><a href="#text-1" id="markdown-toc-text-1">Text</a></li>
+      <li><a href="#dense-1" id="markdown-toc-dense-1">Dense</a></li>
+      <li><a href="#icons-and-labels-1" id="markdown-toc-icons-and-labels-1">Icons and labels</a></li>
+    </ul>
+  </li>
+  <li><a href="#three-line" id="markdown-toc-three-line">Three line</a>    <ul>
+      <li><a href="#text-2" id="markdown-toc-text-2">Text</a></li>
+    </ul>
+  </li>
+  <li><a href="#classes" id="markdown-toc-classes">Classes</a></li>
+  <li><a href="#variables" id="markdown-toc-variables">Variables</a></li>
+</ul>
+
+<h2 id="single-line">Single line</h2>
+
+<h3 id="text">Text</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="list-group">
+  <li class="list-group-item">Text only</li>
+  <a href="#" class="list-group-item">Link item</a>
+  <button type="button" class="list-group-item">Button item</button>
+  <a href="#" class="list-group-item active">Active link item</a>
+  <a href="#" class="list-group-item disabled">Disabled item</a>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Text only<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Link item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Button item<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item active"</span><span class="nt">&gt;</span>Active link item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item disabled"</span><span class="nt">&gt;</span>Disabled item<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="dense">Dense</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="list-group bmd-list-group-sm">
+  <li class="list-group-item">Text</li>
+  <a href="#" class="list-group-item">Link item</a>
+  <button type="button" class="list-group-item">Button item</button>
+  <a href="#" class="list-group-item active">Active link item</a>
+  <a href="#" class="list-group-item disabled">Disabled item</a>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group bmd-list-group-sm"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Link item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Button item<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item active"</span><span class="nt">&gt;</span>Active link item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item disabled"</span><span class="nt">&gt;</span>Disabled item<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="icons-and-labels">Icons and labels</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="list-group">
+  <a class="list-group-item">
+    <i class="material-icons">inbox</i>
+    Icon left
+  </a>
+  <a class="list-group-item">
+    <span class="label label-default label-pill">14</span>
+    Label pill left
+  </a>  
+  
+  <a class="list-group-item">
+    <i class="material-icons">inbox</i>
+    Icons left and right
+    <i class="material-icons">face</i>
+  </a>
+  <a class="list-group-item">
+    <span class="label label-default label-pill">14</span>
+    Label pill left and right
+    <span class="label label-default label-pill">14</span>
+  </a>  
+
+  <a class="list-group-item">
+    Icon right
+    <i class="material-icons pull-xs-right">face</i>
+  </a>
+  <a class="list-group-item">
+    Label pill right
+    <span class="label label-default label-pill pull-xs-right">14</span>
+  </a>  
+  
+  <a class="list-group-item">
+    <span class="label label-default label-pill">14</span>
+    Label pill and icon
+    <i class="material-icons">inbox</i>
+  </a>  
+  <a class="list-group-item">
+    <i class="material-icons">inbox</i>
+    Icon and label pill
+    <span class="label label-default label-pill">14</span>
+  </a>  
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span><span class="nt">&gt;</span>inbox<span class="nt">&lt;/i&gt;</span>
+    Icon left
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-default label-pill"</span><span class="nt">&gt;</span>14<span class="nt">&lt;/span&gt;</span>
+    Label pill left
+  <span class="nt">&lt;/a&gt;</span>  
+  
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span><span class="nt">&gt;</span>inbox<span class="nt">&lt;/i&gt;</span>
+    Icons left and right
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span><span class="nt">&gt;</span>face<span class="nt">&lt;/i&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-default label-pill"</span><span class="nt">&gt;</span>14<span class="nt">&lt;/span&gt;</span>
+    Label pill left and right
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-default label-pill"</span><span class="nt">&gt;</span>14<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>  
+
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    Icon right
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons pull-xs-right"</span><span class="nt">&gt;</span>face<span class="nt">&lt;/i&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    Label pill right
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-default label-pill pull-xs-right"</span><span class="nt">&gt;</span>14<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>  
+  
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-default label-pill"</span><span class="nt">&gt;</span>14<span class="nt">&lt;/span&gt;</span>
+    Label pill and icon
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span><span class="nt">&gt;</span>inbox<span class="nt">&lt;/i&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>  
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span><span class="nt">&gt;</span>inbox<span class="nt">&lt;/i&gt;</span>
+    Icon and label pill
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-default label-pill"</span><span class="nt">&gt;</span>14<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>  
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h2 id="double-line">Double line</h2>
+
+<h3 id="text-1">Text</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="list-group">
+  <a class="list-group-item">
+    <div class="bmd-list-group-col">
+      <p class="list-group-item-heading">List group item heading</p>
+      <p class="list-group-item-text">Some text</p>
+    </div>
+  </a>
+  <a class="list-group-item">
+    <div class="bmd-list-group-col">
+      <p class="list-group-item-heading">List group item heading</p>
+      <p class="list-group-item-text">Some text</p>
+    </div>
+  </a>
+  <a class="list-group-item">
+    <div class="bmd-list-group-col">
+      <p class="list-group-item-heading">List group item heading</p>
+      <p class="list-group-item-text">Some text</p>
+    </div>
+  </a>  
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bmd-list-group-col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bmd-list-group-col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bmd-list-group-col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>  
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="dense-1">Dense</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="list-group bmd-list-group-sm">
+  <a class="list-group-item">
+    <div class="bmd-list-group-col">
+      <p class="list-group-item-heading">List group item heading</p>
+      <p class="list-group-item-text">Some text</p>
+    </div>
+  </a>
+  <a class="list-group-item">
+    <div class="bmd-list-group-col">
+      <p class="list-group-item-heading">List group item heading</p>
+      <p class="list-group-item-text">Some text</p>
+    </div>
+  </a>
+  <a class="list-group-item">
+    <div class="bmd-list-group-col">
+      <p class="list-group-item-heading">List group item heading</p>
+      <p class="list-group-item-text">Some text</p>
+    </div>
+  </a>  
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group bmd-list-group-sm"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bmd-list-group-col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bmd-list-group-col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bmd-list-group-col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>  
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="icons-and-labels-1">Icons and labels</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="list-group">
+  <a class="list-group-item">
+    <i class="material-icons">inbox</i>
+    <div class="bmd-list-group-col">
+      <p class="list-group-item-heading">List group item heading</p>
+      <p class="list-group-item-text">Icon left</p>
+    </div>
+  </a>
+
+  <a class="list-group-item">
+    <span class="label label-default label-pill">14</span>
+    <div class="bmd-list-group-col">
+      <p class="list-group-item-heading">List group item heading</p>
+      <p class="list-group-item-text">Icon left</p>
+    </div>
+  </a>
+
+  <a class="list-group-item">
+    <i class="material-icons">inbox</i>
+    <div class="bmd-list-group-col">
+      <p class="list-group-item-heading">List group item heading</p>
+      <p class="list-group-item-text">Icons left and right</p>
+    </div>
+    <i class="material-icons">face</i>
+  </a>
+
+  <a class="list-group-item">
+    <div class="bmd-list-group-col">
+      <p class="list-group-item-heading">List group item heading</p>
+      <p class="list-group-item-text">Icon right</p>
+    </div>
+    <i class="material-icons pull-xs-right">face</i>
+  </a>
+
+  <a class="list-group-item">
+    <div class="bmd-list-group-col">
+      <p class="list-group-item-heading">List group item heading</p>
+      <p class="list-group-item-text">Label pill to the right</p>
+    </div>
+    <span class="label label-default label-pill pull-xs-right">14</span>
+  </a>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span><span class="nt">&gt;</span>inbox<span class="nt">&lt;/i&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bmd-list-group-col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>Icon left<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-default label-pill"</span><span class="nt">&gt;</span>14<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bmd-list-group-col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>Icon left<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span><span class="nt">&gt;</span>inbox<span class="nt">&lt;/i&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bmd-list-group-col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>Icons left and right<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span><span class="nt">&gt;</span>face<span class="nt">&lt;/i&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bmd-list-group-col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>Icon right<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons pull-xs-right"</span><span class="nt">&gt;</span>face<span class="nt">&lt;/i&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bmd-list-group-col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>Label pill to the right<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-default label-pill pull-xs-right"</span><span class="nt">&gt;</span>14<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h2 id="three-line">Three line</h2>
+
+<h3 id="text-2">Text</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="list-group">
+  <a class="list-group-item">
+    <div class="bmd-list-group-col">
+      <p class="list-group-item-heading">Linked list group item heading</p>
+      <p class="list-group-item-text">This disallows more than two lines.  Hopefully an ellipsis ends this text.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut malesuada elit. Proin tristique, lorem eu vehicula congue, lectus ipsum porta quam, eget rutrum sapien turpis et libero.</p>
+    </div>
+  </a>
+  <li class="list-group-item">
+    <div class="bmd-list-group-col">
+      <p class="list-group-item-heading">Text list group item heading</p>
+      <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut malesuada elit. Proin tristique, lorem eu vehicula congue, lectus ipsum porta quam, eget rutrum sapien turpis et libero.</p>
+    </div>
+  </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bmd-list-group-col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>Linked list group item heading<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>This disallows more than two lines.  Hopefully an ellipsis ends this text.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut malesuada elit. Proin tristique, lorem eu vehicula congue, lectus ipsum porta quam, eget rutrum sapien turpis et libero.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bmd-list-group-col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>Text list group item heading<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut malesuada elit. Proin tristique, lorem eu vehicula congue, lectus ipsum porta quam, eget rutrum sapien turpis et libero.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h2 id="classes">Classes</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Classes</th>
+      <th>BS Equivalent</th>
+      <th>Differences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>.list-group-item</code>
+      </td>
+      <td class="text-nowrap">
+        <code>.list-group-item</code>
+      </td>
+      <td>
+        <p>Flexbox layout, including conveniences for icon and label layout.</p>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>.bmd-list-group-col</code>
+      </td>
+      <td class="text-nowrap">
+        <p>None</p>
+
+      </td>
+      <td>
+        <p>Flexbox column - additional class to use within an <code class="highlighter-rouge">.list-group-item</code> for layout, such as a multi-line content section.</p>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>.bmd-list-group-sm</code>
+      </td>
+      <td class="text-nowrap">
+        <p>None</p>
+
+      </td>
+      <td>
+        <p>Use on <code class="highlighter-rouge">.bmd-list-group</code> for the dense list display</p>
+
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h2 id="variables">Variables</h2>
+
+<p>See <code class="highlighter-rouge">variables/_list-group.scss</code> for a complete list of variables.  Key variables are below:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Value</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>$list-group-bg</code>
+      </td>
+      <td>
+        <code>inherit</code>
+      </td>
+      <td>
+        <p>Original value was <code class="highlighter-rouge">#fff</code>, but it seemed that too often list-groups needed the background to be inherited from the underlying container.</p>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

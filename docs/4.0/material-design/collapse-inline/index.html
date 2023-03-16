@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/>
+<meta
+  http-equiv="refresh"
+  content="time; URL=https://bootstrap-material-design.github.io/bootstrap-material-design/docs/4.0/material-design/collapse-inline.md"
+/>
+
+  </head>
+  <body class="bd-docs" data-spy="scroll" data-target=".bd-sidenav-active">
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+      <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+      </div>
+    </a>
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar"></div>
+
+        
+
+        <main
+          class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content"
+          role="main"
+        >
+          <h1 class="bd-title" id="content">Collapse inline</h1>
+          <p class="bd-lead"></p>
+          <p>The Material Design for Bootstrap <code class="highlighter-rouge">CollapseInline</code> plugin allows you to toggle inline content on your pages with a bit of JavaScript and some classes. This plugin utilizes a handful of classes from the <a href="/bootstrap-material-design/components/collapse/">Bootstrap collapse plugin</a> for easy toggle behavior. Since most functionality and documentation (including a rich set of Javascript events) is already provided by the <a href="/bootstrap-material-design/components/collapse/">Bootstrap collapse plugin</a>, the following will focus only on some samples utilizing the BMD <code class="highlighter-rouge">CollapseInline</code> component.</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#classes" id="markdown-toc-classes">Classes</a></li>
+  <li><a href="#behavior" id="markdown-toc-behavior">Behavior</a></li>
+  <li><a href="#example-search-field-triggered-by-an-icon-button" id="markdown-toc-example-search-field-triggered-by-an-icon-button">Example: Search field triggered by an icon button</a>    <ul>
+      <li><a href="#javascript-event-example" id="markdown-toc-javascript-event-example">Javascript event example</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="classes">Classes</h2>
+
+<p>Below is a list of relevant classes options:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Classes</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>.bmd-collapse-inline</code>
+      </td>
+      <td>
+        <p>Marker class. It is usually included on the <code class="highlighter-rouge">.bmd-form-group</code> if the collapse scenario has any inputs.</p>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>.collapse</code>
+      </td>
+      <td><p>A bootstrap class signifying the container element for markup that will be initially hidden, but expanded inline.</p>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="behavior">Behavior</h2>
+
+<ul>
+  <li>On <code class="highlighter-rouge">shown.bs.collapse</code> (full visibility), the plugin will find the first <code class="highlighter-rouge">input</code> of any type and call <code class="highlighter-rouge">focus()</code>.</li>
+  <li>On <code class="highlighter-rouge">blur</code> of the input element, the plugin will call <code class="highlighter-rouge">.collapse('hide')</code> to collapse the container.</li>
+</ul>
+
+<h2 id="example-search-field-triggered-by-an-icon-button">Example: Search field triggered by an icon button</h2>
+
+<p>Click the search icon below (on the right).</p>
+
+<div class="bd-example" data-example-id="">
+<div class="bmd-form-group bmd-collapse-inline pull-xs-right">
+  <button class="btn bmd-btn-icon" for="search" data-toggle="collapse" data-target="#collapse-search" aria-expanded="false" aria-controls="collapse-search">
+    <i class="material-icons">search</i>
+  </button>  
+  <span id="collapse-search" class="collapse">
+    <input class="form-control" type="text" id="search" placeholder="Enter your query..." />
+  </span>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bmd-form-group bmd-collapse-inline pull-xs-right"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn bmd-btn-icon"</span> <span class="na">for=</span><span class="s">"search"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#collapse-search"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapse-search"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span><span class="nt">&gt;</span>search<span class="nt">&lt;/i&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>  
+  <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"collapse-search"</span> <span class="na">class=</span><span class="s">"collapse"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"Enter your query..."</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="javascript-event-example">Javascript event example</h3>
+
+<p>Behavior customization can be achieved by responding to the <a href="/bootstrap-material-design/components/collapse/#events">collapse plugin’s Javascript events</a>.</p>
+
+<p>For example, the following code would clear the search input field after collapsing it:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js">  <span class="c1">// clear field value once closed</span>
+  <span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'#collapse-search'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'hidden.bs.collapse'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">'#search'</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="s1">''</span><span class="p">)</span>
+    <span class="p">})</span>
+  <span class="p">});</span></code></pre></figure>
+
+
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
